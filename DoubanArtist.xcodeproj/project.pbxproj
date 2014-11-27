@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C52711DE1A1F803E004CD020 /* DATrackCellV.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52711DD1A1F803E004CD020 /* DATrackCellV.xib */; };
+		C52711E11A1F806B004CD020 /* DATrackCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C52711E01A1F806B004CD020 /* DATrackCellV.m */; };
+		C530E7CC1A22302700F1101E /* DAProfileC.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7CA1A22302700F1101E /* DAProfileC.m */; };
+		C530E7CD1A22302700F1101E /* DAProfileC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C530E7CB1A22302700F1101E /* DAProfileC.xib */; };
+		C530E7D41A2239F900F1101E /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7D11A2239F900F1101E /* UIImage+BlurredFrame.m */; };
+		C530E7D51A2239F900F1101E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7D31A2239F900F1101E /* UIImage+ImageEffects.m */; };
+		C530E7D91A22B1E500F1101E /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7D81A22B1E500F1101E /* Colours.m */; };
+		C530E7DD1A23060300F1101E /* DZNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7DC1A23060300F1101E /* DZNSegmentedControl.m */; };
+		C5420FC11A24534E0058BFFF /* DAPlaylistInProfileC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FC01A24534E0058BFFF /* DAPlaylistInProfileC.m */; };
+		C5420FCA1A245C070058BFFF /* DAPlaylistService.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FC91A245C070058BFFF /* DAPlaylistService.m */; };
+		C5420FCD1A2471DF0058BFFF /* DAEventC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FCC1A2471DF0058BFFF /* DAEventC.m */; };
+		C5420FD01A2472160058BFFF /* DAProfileSubListC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FCF1A2472160058BFFF /* DAProfileSubListC.m */; };
+		C5420FD41A2474E50058BFFF /* DAProfileSubListCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FD31A2474E50058BFFF /* DAProfileSubListCellV.m */; };
+		C5420FD71A2478740058BFFF /* DAEventCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FD61A2478740058BFFF /* DAEventCellV.m */; };
+		C5420FDD1A24975C0058BFFF /* DAPlaylistInProfileCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C5420FDC1A24975C0058BFFF /* DAPlaylistInProfileCellV.m */; };
+		C5757D631A19D030008457F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D621A19D030008457F4 /* Foundation.framework */; };
+		C5757D651A19D030008457F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D641A19D030008457F4 /* CoreGraphics.framework */; };
+		C5757D671A19D030008457F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D661A19D030008457F4 /* UIKit.framework */; };
+		C5757D6D1A19D030008457F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5757D6B1A19D030008457F4 /* InfoPlist.strings */; };
+		C5757D6F1A19D030008457F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757D6E1A19D030008457F4 /* main.m */; };
+		C5757D731A19D030008457F4 /* DAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757D721A19D030008457F4 /* DAAppDelegate.m */; };
+		C5757D791A19D030008457F4 /* DAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757D781A19D030008457F4 /* DAViewController.m */; };
+		C5757D7B1A19D030008457F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5757D7A1A19D030008457F4 /* Images.xcassets */; };
+		C5757D821A19D031008457F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D811A19D031008457F4 /* XCTest.framework */; };
+		C5757D831A19D031008457F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D621A19D030008457F4 /* Foundation.framework */; };
+		C5757D841A19D031008457F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5757D661A19D030008457F4 /* UIKit.framework */; };
+		C5757D8C1A19D031008457F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5757D8A1A19D031008457F4 /* InfoPlist.strings */; };
+		C5757D8E1A19D031008457F4 /* DoubanArtistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757D8D1A19D031008457F4 /* DoubanArtistTests.m */; };
+		C5757D9B1A1B00CC008457F4 /* DALeftMenuC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5757D9A1A1B00CC008457F4 /* DALeftMenuC.xib */; };
+		C5757D9F1A1C79AC008457F4 /* DALeftMenuC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757D9E1A1C79AC008457F4 /* DALeftMenuC.m */; };
+		C5757DA21A1D95EB008457F4 /* DARootC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DA11A1D95EB008457F4 /* DARootC.m */; };
+		C5757DA61A1D9613008457F4 /* DAPlayerC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DA41A1D9613008457F4 /* DAPlayerC.m */; };
+		C5757DA71A1D9613008457F4 /* DAPlayerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5757DA51A1D9613008457F4 /* DAPlayerC.xib */; };
+		C5757DAB1A1DDE6A008457F4 /* DAHottestC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DA91A1DDE6A008457F4 /* DAHottestC.m */; };
+		C5757DB01A1DE998008457F4 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DAF1A1DE998008457F4 /* UIView+Borders.m */; };
+		C5CE7E3B1A1E29E400EC9D7E /* DAHottestTrackC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */; };
+		C5CE7E401A1E2A0D00EC9D7E /* DAHottestArtistC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */; };
+		C5D88D3C1A2170EA00F00125 /* DAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D3B1A2170EA00F00125 /* DAConstants.m */; };
+		C5D88D401A2171CC00F00125 /* DAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D3F1A2171CC00F00125 /* DAUtils.m */; };
+		C5D88D431A21B16200F00125 /* DARefreshableContentTableC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D421A21B16200F00125 /* DARefreshableContentTableC.m */; };
+		C5D88D461A21BB3000F00125 /* DAArtistCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D451A21BB3000F00125 /* DAArtistCellV.m */; };
+		C5D88D491A21BF1700F00125 /* DAArtistService.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D481A21BF1700F00125 /* DAArtistService.m */; };
+		C5DF7B491A20B9E7005E64BE /* DATrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF7B481A20B9E7005E64BE /* DATrackService.m */; };
+		C5FA9F861A2315B000FFFEC6 /* DASwipePageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FA9F851A2315B000FFFEC6 /* DASwipePageScrollView.m */; };
+		EFA6E05169D0426594537FA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E69AE3B237453E95586381 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5757D851A19D031008457F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5757D571A19D030008457F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5757D5E1A19D030008457F4;
+			remoteInfo = DoubanArtist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E38FFBC73BE57FB5804A490 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		65E69AE3B237453E95586381 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52711DD1A1F803E004CD020 /* DATrackCellV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DATrackCellV.xib; sourceTree = "<group>"; };
+		C52711DF1A1F806B004CD020 /* DATrackCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATrackCellV.h; sourceTree = "<group>"; };
+		C52711E01A1F806B004CD020 /* DATrackCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATrackCellV.m; sourceTree = "<group>"; };
+		C530E7C91A22302700F1101E /* DAProfileC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProfileC.h; sourceTree = "<group>"; };
+		C530E7CA1A22302700F1101E /* DAProfileC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAProfileC.m; sourceTree = "<group>"; };
+		C530E7CB1A22302700F1101E /* DAProfileC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DAProfileC.xib; sourceTree = "<group>"; };
+		C530E7D01A2239F900F1101E /* UIImage+BlurredFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurredFrame.h"; sourceTree = "<group>"; };
+		C530E7D11A2239F900F1101E /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
+		C530E7D21A2239F900F1101E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		C530E7D31A2239F900F1101E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		C530E7D71A22B1E500F1101E /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		C530E7D81A22B1E500F1101E /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		C530E7DB1A23060300F1101E /* DZNSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNSegmentedControl.h; sourceTree = "<group>"; };
+		C530E7DC1A23060300F1101E /* DZNSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNSegmentedControl.m; sourceTree = "<group>"; };
+		C5420FBF1A24534E0058BFFF /* DAPlaylistInProfileC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPlaylistInProfileC.h; sourceTree = "<group>"; };
+		C5420FC01A24534E0058BFFF /* DAPlaylistInProfileC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPlaylistInProfileC.m; sourceTree = "<group>"; };
+		C5420FC81A245C070058BFFF /* DAPlaylistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPlaylistService.h; sourceTree = "<group>"; };
+		C5420FC91A245C070058BFFF /* DAPlaylistService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPlaylistService.m; sourceTree = "<group>"; };
+		C5420FCB1A2471DF0058BFFF /* DAEventC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAEventC.h; sourceTree = "<group>"; };
+		C5420FCC1A2471DF0058BFFF /* DAEventC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAEventC.m; sourceTree = "<group>"; };
+		C5420FCE1A2472160058BFFF /* DAProfileSubListC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProfileSubListC.h; sourceTree = "<group>"; };
+		C5420FCF1A2472160058BFFF /* DAProfileSubListC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAProfileSubListC.m; sourceTree = "<group>"; };
+		C5420FD21A2474E50058BFFF /* DAProfileSubListCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProfileSubListCellV.h; sourceTree = "<group>"; };
+		C5420FD31A2474E50058BFFF /* DAProfileSubListCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAProfileSubListCellV.m; sourceTree = "<group>"; };
+		C5420FD51A2478740058BFFF /* DAEventCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAEventCellV.h; sourceTree = "<group>"; };
+		C5420FD61A2478740058BFFF /* DAEventCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAEventCellV.m; sourceTree = "<group>"; };
+		C5420FDB1A24975C0058BFFF /* DAPlaylistInProfileCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPlaylistInProfileCellV.h; sourceTree = "<group>"; };
+		C5420FDC1A24975C0058BFFF /* DAPlaylistInProfileCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPlaylistInProfileCellV.m; sourceTree = "<group>"; };
+		C5757D5F1A19D030008457F4 /* DoubanArtist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanArtist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5757D621A19D030008457F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5757D641A19D030008457F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C5757D661A19D030008457F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C5757D6A1A19D030008457F4 /* DoubanArtist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubanArtist-Info.plist"; sourceTree = "<group>"; };
+		C5757D6C1A19D030008457F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5757D6E1A19D030008457F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5757D701A19D030008457F4 /* DoubanArtist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoubanArtist-Prefix.pch"; sourceTree = "<group>"; };
+		C5757D711A19D030008457F4 /* DAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAAppDelegate.h; sourceTree = "<group>"; };
+		C5757D721A19D030008457F4 /* DAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAAppDelegate.m; sourceTree = "<group>"; };
+		C5757D771A19D030008457F4 /* DAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAViewController.h; sourceTree = "<group>"; };
+		C5757D781A19D030008457F4 /* DAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAViewController.m; sourceTree = "<group>"; };
+		C5757D7A1A19D030008457F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5757D801A19D031008457F4 /* DoubanArtistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubanArtistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5757D811A19D031008457F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C5757D891A19D031008457F4 /* DoubanArtistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubanArtistTests-Info.plist"; sourceTree = "<group>"; };
+		C5757D8B1A19D031008457F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5757D8D1A19D031008457F4 /* DoubanArtistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubanArtistTests.m; sourceTree = "<group>"; };
+		C5757D981A1A435D008457F4 /* DAConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAConstants.h; sourceTree = "<group>"; };
+		C5757D9A1A1B00CC008457F4 /* DALeftMenuC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DALeftMenuC.xib; sourceTree = "<group>"; };
+		C5757D9D1A1C79AC008457F4 /* DALeftMenuC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALeftMenuC.h; sourceTree = "<group>"; };
+		C5757D9E1A1C79AC008457F4 /* DALeftMenuC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALeftMenuC.m; sourceTree = "<group>"; };
+		C5757DA01A1D95EB008457F4 /* DARootC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DARootC.h; sourceTree = "<group>"; };
+		C5757DA11A1D95EB008457F4 /* DARootC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DARootC.m; sourceTree = "<group>"; };
+		C5757DA31A1D9613008457F4 /* DAPlayerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPlayerC.h; sourceTree = "<group>"; };
+		C5757DA41A1D9613008457F4 /* DAPlayerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPlayerC.m; sourceTree = "<group>"; };
+		C5757DA51A1D9613008457F4 /* DAPlayerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DAPlayerC.xib; sourceTree = "<group>"; };
+		C5757DA81A1DDE6A008457F4 /* DAHottestC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHottestC.h; sourceTree = "<group>"; };
+		C5757DA91A1DDE6A008457F4 /* DAHottestC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHottestC.m; sourceTree = "<group>"; };
+		C5757DAE1A1DE998008457F4 /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		C5757DAF1A1DE998008457F4 /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		C5CE7E381A1E29E400EC9D7E /* DAHottestTrackC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHottestTrackC.h; sourceTree = "<group>"; };
+		C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHottestTrackC.m; sourceTree = "<group>"; };
+		C5CE7E3D1A1E2A0D00EC9D7E /* DAHottestArtistC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHottestArtistC.h; sourceTree = "<group>"; };
+		C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHottestArtistC.m; sourceTree = "<group>"; };
+		C5D88D3B1A2170EA00F00125 /* DAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAConstants.m; sourceTree = "<group>"; };
+		C5D88D3E1A2171CC00F00125 /* DAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAUtils.h; sourceTree = "<group>"; };
+		C5D88D3F1A2171CC00F00125 /* DAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAUtils.m; sourceTree = "<group>"; };
+		C5D88D411A21B16200F00125 /* DARefreshableContentTableC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DARefreshableContentTableC.h; sourceTree = "<group>"; };
+		C5D88D421A21B16200F00125 /* DARefreshableContentTableC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DARefreshableContentTableC.m; sourceTree = "<group>"; };
+		C5D88D441A21BB3000F00125 /* DAArtistCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAArtistCellV.h; sourceTree = "<group>"; };
+		C5D88D451A21BB3000F00125 /* DAArtistCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAArtistCellV.m; sourceTree = "<group>"; };
+		C5D88D471A21BF1700F00125 /* DAArtistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAArtistService.h; sourceTree = "<group>"; };
+		C5D88D481A21BF1700F00125 /* DAArtistService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAArtistService.m; sourceTree = "<group>"; };
+		C5DF7B471A20B9E7005E64BE /* DATrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATrackService.h; sourceTree = "<group>"; };
+		C5DF7B481A20B9E7005E64BE /* DATrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATrackService.m; sourceTree = "<group>"; };
+		C5FA9F841A2315B000FFFEC6 /* DASwipePageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DASwipePageScrollView.h; sourceTree = "<group>"; };
+		C5FA9F851A2315B000FFFEC6 /* DASwipePageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DASwipePageScrollView.m; sourceTree = "<group>"; };
+		EBBA189FF9906EB52C42BFA8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5757D5C1A19D030008457F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5757D651A19D030008457F4 /* CoreGraphics.framework in Frameworks */,
+				C5757D671A19D030008457F4 /* UIKit.framework in Frameworks */,
+				C5757D631A19D030008457F4 /* Foundation.framework in Frameworks */,
+				EFA6E05169D0426594537FA8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5757D7D1A19D031008457F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5757D821A19D031008457F4 /* XCTest.framework in Frameworks */,
+				C5757D841A19D031008457F4 /* UIKit.framework in Frameworks */,
+				C5757D831A19D031008457F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FD35D7E2AF2B9FECFCADE45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBBA189FF9906EB52C42BFA8 /* Pods.debug.xcconfig */,
+				1E38FFBC73BE57FB5804A490 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C530E7CE1A2239CD00F1101E /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C530E7DA1A2305F500F1101E /* DZNSegmentedControl */,
+				C530E7D61A22B1D900F1101E /* Colours */,
+				C530E7CF1A2239E400F1101E /* UIImage+BlurredFrame */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		C530E7CF1A2239E400F1101E /* UIImage+BlurredFrame */ = {
+			isa = PBXGroup;
+			children = (
+				C530E7D01A2239F900F1101E /* UIImage+BlurredFrame.h */,
+				C530E7D11A2239F900F1101E /* UIImage+BlurredFrame.m */,
+				C530E7D21A2239F900F1101E /* UIImage+ImageEffects.h */,
+				C530E7D31A2239F900F1101E /* UIImage+ImageEffects.m */,
+			);
+			name = "UIImage+BlurredFrame";
+			sourceTree = "<group>";
+		};
+		C530E7D61A22B1D900F1101E /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				C530E7D71A22B1E500F1101E /* Colours.h */,
+				C530E7D81A22B1E500F1101E /* Colours.m */,
+			);
+			name = Colours;
+			sourceTree = "<group>";
+		};
+		C530E7DA1A2305F500F1101E /* DZNSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				C530E7DB1A23060300F1101E /* DZNSegmentedControl.h */,
+				C530E7DC1A23060300F1101E /* DZNSegmentedControl.m */,
+			);
+			name = DZNSegmentedControl;
+			sourceTree = "<group>";
+		};
+		C5757D561A19D030008457F4 = {
+			isa = PBXGroup;
+			children = (
+				C5757D681A19D030008457F4 /* DoubanArtist */,
+				C5757D871A19D031008457F4 /* DoubanArtistTests */,
+				C5757D611A19D030008457F4 /* Frameworks */,
+				C5757D601A19D030008457F4 /* Products */,
+				6FD35D7E2AF2B9FECFCADE45 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C5757D601A19D030008457F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D5F1A19D030008457F4 /* DoubanArtist.app */,
+				C5757D801A19D031008457F4 /* DoubanArtistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5757D611A19D030008457F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D621A19D030008457F4 /* Foundation.framework */,
+				C5757D641A19D030008457F4 /* CoreGraphics.framework */,
+				C5757D661A19D030008457F4 /* UIKit.framework */,
+				C5757D811A19D031008457F4 /* XCTest.framework */,
+				65E69AE3B237453E95586381 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5757D681A19D030008457F4 /* DoubanArtist */ = {
+			isa = PBXGroup;
+			children = (
+				C530E7CE1A2239CD00F1101E /* vendor */,
+				C5DF7B461A20B9B4005E64BE /* service */,
+				C5757DAD1A1DE96F008457F4 /* category */,
+				C5757D9C1A1C73E7008457F4 /* controller */,
+				C5757D991A1B009B008457F4 /* view */,
+				C5757D971A1A433F008457F4 /* utils */,
+				C5757D711A19D030008457F4 /* DAAppDelegate.h */,
+				C5757D721A19D030008457F4 /* DAAppDelegate.m */,
+				C5757D771A19D030008457F4 /* DAViewController.h */,
+				C5757D781A19D030008457F4 /* DAViewController.m */,
+				C5757D7A1A19D030008457F4 /* Images.xcassets */,
+				C5757D691A19D030008457F4 /* Supporting Files */,
+			);
+			path = DoubanArtist;
+			sourceTree = "<group>";
+		};
+		C5757D691A19D030008457F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D6A1A19D030008457F4 /* DoubanArtist-Info.plist */,
+				C5757D6B1A19D030008457F4 /* InfoPlist.strings */,
+				C5757D6E1A19D030008457F4 /* main.m */,
+				C5757D701A19D030008457F4 /* DoubanArtist-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5757D871A19D031008457F4 /* DoubanArtistTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D8D1A19D031008457F4 /* DoubanArtistTests.m */,
+				C5757D881A19D031008457F4 /* Supporting Files */,
+			);
+			path = DoubanArtistTests;
+			sourceTree = "<group>";
+		};
+		C5757D881A19D031008457F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D891A19D031008457F4 /* DoubanArtistTests-Info.plist */,
+				C5757D8A1A19D031008457F4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5757D971A1A433F008457F4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D981A1A435D008457F4 /* DAConstants.h */,
+				C5D88D3B1A2170EA00F00125 /* DAConstants.m */,
+				C5D88D3E1A2171CC00F00125 /* DAUtils.h */,
+				C5D88D3F1A2171CC00F00125 /* DAUtils.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		C5757D991A1B009B008457F4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C5420FDB1A24975C0058BFFF /* DAPlaylistInProfileCellV.h */,
+				C5420FDC1A24975C0058BFFF /* DAPlaylistInProfileCellV.m */,
+				C530E7CB1A22302700F1101E /* DAProfileC.xib */,
+				C5D88D441A21BB3000F00125 /* DAArtistCellV.h */,
+				C5D88D451A21BB3000F00125 /* DAArtistCellV.m */,
+				C5757DA51A1D9613008457F4 /* DAPlayerC.xib */,
+				C5757D9A1A1B00CC008457F4 /* DALeftMenuC.xib */,
+				C52711DD1A1F803E004CD020 /* DATrackCellV.xib */,
+				C52711DF1A1F806B004CD020 /* DATrackCellV.h */,
+				C52711E01A1F806B004CD020 /* DATrackCellV.m */,
+				C5FA9F841A2315B000FFFEC6 /* DASwipePageScrollView.h */,
+				C5FA9F851A2315B000FFFEC6 /* DASwipePageScrollView.m */,
+				C5420FD21A2474E50058BFFF /* DAProfileSubListCellV.h */,
+				C5420FD31A2474E50058BFFF /* DAProfileSubListCellV.m */,
+				C5420FD51A2478740058BFFF /* DAEventCellV.h */,
+				C5420FD61A2478740058BFFF /* DAEventCellV.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		C5757D9C1A1C73E7008457F4 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5757D9D1A1C79AC008457F4 /* DALeftMenuC.h */,
+				C5757D9E1A1C79AC008457F4 /* DALeftMenuC.m */,
+				C5757DA01A1D95EB008457F4 /* DARootC.h */,
+				C5757DA11A1D95EB008457F4 /* DARootC.m */,
+				C5757DA31A1D9613008457F4 /* DAPlayerC.h */,
+				C5757DA41A1D9613008457F4 /* DAPlayerC.m */,
+				C5757DA81A1DDE6A008457F4 /* DAHottestC.h */,
+				C5757DA91A1DDE6A008457F4 /* DAHottestC.m */,
+				C5CE7E381A1E29E400EC9D7E /* DAHottestTrackC.h */,
+				C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */,
+				C5CE7E3D1A1E2A0D00EC9D7E /* DAHottestArtistC.h */,
+				C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */,
+				C5D88D411A21B16200F00125 /* DARefreshableContentTableC.h */,
+				C5D88D421A21B16200F00125 /* DARefreshableContentTableC.m */,
+				C530E7C91A22302700F1101E /* DAProfileC.h */,
+				C530E7CA1A22302700F1101E /* DAProfileC.m */,
+				C5420FBF1A24534E0058BFFF /* DAPlaylistInProfileC.h */,
+				C5420FC01A24534E0058BFFF /* DAPlaylistInProfileC.m */,
+				C5420FCB1A2471DF0058BFFF /* DAEventC.h */,
+				C5420FCC1A2471DF0058BFFF /* DAEventC.m */,
+				C5420FCE1A2472160058BFFF /* DAProfileSubListC.h */,
+				C5420FCF1A2472160058BFFF /* DAProfileSubListC.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		C5757DAD1A1DE96F008457F4 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				C5757DAE1A1DE998008457F4 /* UIView+Borders.h */,
+				C5757DAF1A1DE998008457F4 /* UIView+Borders.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		C5DF7B461A20B9B4005E64BE /* service */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF7B471A20B9E7005E64BE /* DATrackService.h */,
+				C5DF7B481A20B9E7005E64BE /* DATrackService.m */,
+				C5D88D471A21BF1700F00125 /* DAArtistService.h */,
+				C5D88D481A21BF1700F00125 /* DAArtistService.m */,
+				C5420FC81A245C070058BFFF /* DAPlaylistService.h */,
+				C5420FC91A245C070058BFFF /* DAPlaylistService.m */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5757D5E1A19D030008457F4 /* DoubanArtist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5757D911A19D031008457F4 /* Build configuration list for PBXNativeTarget "DoubanArtist" */;
+			buildPhases = (
+				CD61F82D4F4E4FA88C2D9664 /* Check Pods Manifest.lock */,
+				C5757D5B1A19D030008457F4 /* Sources */,
+				C5757D5C1A19D030008457F4 /* Frameworks */,
+				C5757D5D1A19D030008457F4 /* Resources */,
+				A1BE91EA27624A76BFAD8B35 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubanArtist;
+			productName = DoubanArtist;
+			productReference = C5757D5F1A19D030008457F4 /* DoubanArtist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5757D7F1A19D031008457F4 /* DoubanArtistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5757D941A19D031008457F4 /* Build configuration list for PBXNativeTarget "DoubanArtistTests" */;
+			buildPhases = (
+				C5757D7C1A19D031008457F4 /* Sources */,
+				C5757D7D1A19D031008457F4 /* Frameworks */,
+				C5757D7E1A19D031008457F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5757D861A19D031008457F4 /* PBXTargetDependency */,
+			);
+			name = DoubanArtistTests;
+			productName = DoubanArtistTests;
+			productReference = C5757D801A19D031008457F4 /* DoubanArtistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5757D571A19D030008457F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DA;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					C5757D7F1A19D031008457F4 = {
+						TestTargetID = C5757D5E1A19D030008457F4;
+					};
+				};
+			};
+			buildConfigurationList = C5757D5A1A19D030008457F4 /* Build configuration list for PBXProject "DoubanArtist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5757D561A19D030008457F4;
+			productRefGroup = C5757D601A19D030008457F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5757D5E1A19D030008457F4 /* DoubanArtist */,
+				C5757D7F1A19D031008457F4 /* DoubanArtistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5757D5D1A19D030008457F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5757D9B1A1B00CC008457F4 /* DALeftMenuC.xib in Resources */,
+				C52711DE1A1F803E004CD020 /* DATrackCellV.xib in Resources */,
+				C530E7CD1A22302700F1101E /* DAProfileC.xib in Resources */,
+				C5757D7B1A19D030008457F4 /* Images.xcassets in Resources */,
+				C5757D6D1A19D030008457F4 /* InfoPlist.strings in Resources */,
+				C5757DA71A1D9613008457F4 /* DAPlayerC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5757D7E1A19D031008457F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5757D8C1A19D031008457F4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1BE91EA27624A76BFAD8B35 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD61F82D4F4E4FA88C2D9664 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5757D5B1A19D030008457F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5420FD41A2474E50058BFFF /* DAProfileSubListCellV.m in Sources */,
+				C5420FC11A24534E0058BFFF /* DAPlaylistInProfileC.m in Sources */,
+				C530E7D41A2239F900F1101E /* UIImage+BlurredFrame.m in Sources */,
+				C5757DB01A1DE998008457F4 /* UIView+Borders.m in Sources */,
+				C5420FDD1A24975C0058BFFF /* DAPlaylistInProfileCellV.m in Sources */,
+				C5757D9F1A1C79AC008457F4 /* DALeftMenuC.m in Sources */,
+				C5420FD01A2472160058BFFF /* DAProfileSubListC.m in Sources */,
+				C5757D6F1A19D030008457F4 /* main.m in Sources */,
+				C52711E11A1F806B004CD020 /* DATrackCellV.m in Sources */,
+				C5CE7E401A1E2A0D00EC9D7E /* DAHottestArtistC.m in Sources */,
+				C5D88D431A21B16200F00125 /* DARefreshableContentTableC.m in Sources */,
+				C5D88D3C1A2170EA00F00125 /* DAConstants.m in Sources */,
+				C5757DA21A1D95EB008457F4 /* DARootC.m in Sources */,
+				C5757DA61A1D9613008457F4 /* DAPlayerC.m in Sources */,
+				C530E7D91A22B1E500F1101E /* Colours.m in Sources */,
+				C5D88D401A2171CC00F00125 /* DAUtils.m in Sources */,
+				C5757D791A19D030008457F4 /* DAViewController.m in Sources */,
+				C5D88D461A21BB3000F00125 /* DAArtistCellV.m in Sources */,
+				C5420FCD1A2471DF0058BFFF /* DAEventC.m in Sources */,
+				C5420FCA1A245C070058BFFF /* DAPlaylistService.m in Sources */,
+				C5CE7E3B1A1E29E400EC9D7E /* DAHottestTrackC.m in Sources */,
+				C530E7DD1A23060300F1101E /* DZNSegmentedControl.m in Sources */,
+				C5757D731A19D030008457F4 /* DAAppDelegate.m in Sources */,
+				C5DF7B491A20B9E7005E64BE /* DATrackService.m in Sources */,
+				C5420FD71A2478740058BFFF /* DAEventCellV.m in Sources */,
+				C530E7D51A2239F900F1101E /* UIImage+ImageEffects.m in Sources */,
+				C5FA9F861A2315B000FFFEC6 /* DASwipePageScrollView.m in Sources */,
+				C5D88D491A21BF1700F00125 /* DAArtistService.m in Sources */,
+				C530E7CC1A22302700F1101E /* DAProfileC.m in Sources */,
+				C5757DAB1A1DDE6A008457F4 /* DAHottestC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5757D7C1A19D031008457F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5757D8E1A19D031008457F4 /* DoubanArtistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5757D861A19D031008457F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5757D5E1A19D030008457F4 /* DoubanArtist */;
+			targetProxy = C5757D851A19D031008457F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5757D6B1A19D030008457F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5757D6C1A19D030008457F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C5757D8A1A19D031008457F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5757D8B1A19D031008457F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5757D8F1A19D031008457F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5757D901A19D031008457F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5757D921A19D031008457F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBA189FF9906EB52C42BFA8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubanArtist/DoubanArtist-Prefix.pch";
+				INFOPLIST_FILE = "DoubanArtist/DoubanArtist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C5757D931A19D031008457F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E38FFBC73BE57FB5804A490 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubanArtist/DoubanArtist-Prefix.pch";
+				INFOPLIST_FILE = "DoubanArtist/DoubanArtist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C5757D951A19D031008457F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoubanArtist.app/DoubanArtist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubanArtist/DoubanArtist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DoubanArtistTests/DoubanArtistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C5757D961A19D031008457F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoubanArtist.app/DoubanArtist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubanArtist/DoubanArtist-Prefix.pch";
+				INFOPLIST_FILE = "DoubanArtistTests/DoubanArtistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5757D5A1A19D030008457F4 /* Build configuration list for PBXProject "DoubanArtist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5757D8F1A19D031008457F4 /* Debug */,
+				C5757D901A19D031008457F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5757D911A19D031008457F4 /* Build configuration list for PBXNativeTarget "DoubanArtist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5757D921A19D031008457F4 /* Debug */,
+				C5757D931A19D031008457F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5757D941A19D031008457F4 /* Build configuration list for PBXNativeTarget "DoubanArtistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5757D951A19D031008457F4 /* Debug */,
+				C5757D961A19D031008457F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5757D571A19D030008457F4 /* Project object */;
+}

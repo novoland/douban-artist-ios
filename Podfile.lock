@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HPGrowingTextView (1.1)
+  - LTUpdate (0.0.2)
+  - MBProgressHUD (0.9)
+  - MTStatusBarOverlay (0.9.1)
+  - pop (1.0.7)
+  - RESideMenu (4.0.7)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SSKeychain (1.2.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - HPGrowingTextView
+  - LTUpdate (~> 0.0.2)
+  - MBProgressHUD
+  - MTStatusBarOverlay
+  - pop (~> 1.0)
+  - RESideMenu (~> 4.0.7)
+  - SDWebImage (~> 3.6)
+  - SSKeychain
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  HPGrowingTextView: 07d5ab1f1e867acfb7a6f498b819948c9e97d07c
+  LTUpdate: 2b565ebcec2be846c89c94072301696dc93b8074
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  MTStatusBarOverlay: f1fef7143ed3e9ce3d2c6ee3f297079e5cab905f
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  RESideMenu: a9c1cd2e64e60e1d3166ddac01a83e215a0e4d30
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
+
+COCOAPODS: 0.35.0

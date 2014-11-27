@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DARefreshableContentTableC controllerSwitched:]:DARefreshableContentTableC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DASwipePageScrollView loadScrollViewWithPage:]:DASwipePageScrollView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGRectMake([self getPageWidth] * page, 0, [self getPageWidth], [self getPageHeight])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DAProfileSubListC scrollViewDidScroll:]:DAProfileSubListC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.scrollViewDidScroll">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DASwipePageScrollView gotoPage:animated:]:DASwipePageScrollView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__32-[DAPlaylistInProfileC refresh:]_block_invoke:DAPlaylistInProfileC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DAProfileC viewDidLayoutSubviews]:DAProfileC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_tabBar.selectedSegmentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__27-[DAHottestTrackC refresh:]_block_invoke:DAHottestTrackC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self tableView]">
+            </PersistentString>
+            <PersistentString
+               value = "[self view]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DASwipePageScrollView adjustSubViewsSize]:DASwipePageScrollView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self getFrame]">
+            </PersistentString>
+            <PersistentString
+               value = "CGRectMake([self getPageWidth] * i, 0, [self getPageWidth], [self getPageHeight])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DAPlaylistInProfileC refresh:]:DAPlaylistInProfileC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DASwipePageScrollView invokeCallbackForIndex:selector:]:DASwipePageScrollView.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

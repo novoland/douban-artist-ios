@@ -1,0 +1,8 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/HPGrowingTextView" "${PODS_ROOT}/Headers/Public/LTUpdate" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MTStatusBarOverlay" "${PODS_ROOT}/Headers/Public/RESideMenu" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SSKeychain" "${PODS_ROOT}/Headers/Public/pop"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/HPGrowingTextView" -isystem "${PODS_ROOT}/Headers/Public/LTUpdate" -isystem "${PODS_ROOT}/Headers/Public/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/MTStatusBarOverlay" -isystem "${PODS_ROOT}/Headers/Public/RESideMenu" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/SSKeychain" -isystem "${PODS_ROOT}/Headers/Public/pop"
+OTHER_LDFLAGS = -ObjC -l"Pods-AFNetworking" -l"Pods-HPGrowingTextView" -l"Pods-LTUpdate" -l"Pods-MBProgressHUD" -l"Pods-MTStatusBarOverlay" -l"Pods-RESideMenu" -l"Pods-SDWebImage" -l"Pods-SSKeychain" -l"Pods-pop" -l"c++" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
