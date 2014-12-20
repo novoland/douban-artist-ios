@@ -23,6 +23,7 @@
 + (NSInteger) getHeightForMessage:(NSDictionary *)msg{
     CGFloat cellHeight = 0;
     CGFloat curWidth = kScreen_Width - 40 - 2*kPaddingLeftWidth;
+    NSLog(@"a: %f",[[msg objectForKey:@"content"] getHeightWithFont:kMessageCell_FontContent constrainedToSize:CGSizeMake(curWidth, CGFLOAT_MAX)]);
     cellHeight += 10 +[[msg objectForKey:@"content"] getHeightWithFont:kMessageCell_FontContent constrainedToSize:CGSizeMake(curWidth, CGFLOAT_MAX)] + 5 +20 +10;
     return cellHeight;
 }
@@ -33,8 +34,6 @@
     
     // content
     self.textLabel.text = [model objectForKey:@"content"];
-    self.textLabel.font = kMessageCell_FontContent;
-    self.textLabel.numberOfLines = 0; // 自动换行
     
     // icon
     [self.imageView sd_setImageWithURL:[model objectForKey:@"icon"] placeholderImage:[UIImage imageNamed:@"IconTrackDefault"]];
@@ -59,8 +58,10 @@
     [self.imageView doCircleFrame];
     
     // 评论内容自适应高度
-    self.textLabel.frame = CGRectMake(kPaddingLeftWidth + 40, curBottomY,textWidth,1);
-    [self.textLabel sizeToFit];
+    self.textLabel.font = kMessageCell_FontContent;
+    self.textLabel.frame = CGRectMake(kPaddingLeftWidth + 40, curBottomY,textWidth,0);
+//    [self.textLabel sizeToFit]; // 这句效果一样
+    [self.textLabel setLongString:[self.model objectForKey:@"content"] withFitWidth:textWidth];
     
     curBottomY += CGRectGetHeight(self.textLabel.frame) + 5;
     self.detailTextLabel.frame = CGRectMake(kPaddingLeftWidth + 40, curBottomY, textWidth, 20);

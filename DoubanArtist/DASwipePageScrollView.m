@@ -92,10 +92,10 @@
 }
 
 - (void) adjustSubViewsSize{
-    NSArray *subviews = self.subviews;
-    for(int i=0;i<subviews.count;i++){
-        UIView *v = [subviews objectAtIndex:i];
-        [v setFrame:CGRectMake([self getPageWidth] * i, 0, [self getPageWidth], [self getPageHeight])];
+    for(int i=0;i<_subControllerList.count;i++){
+        UIViewController *v = [_subControllerList objectAtIndex:i];
+        if(v && v.view.superview)
+            [v.view setFrame:CGRectMake([self getPageWidth] * i, 0, [self getPageWidth], [self getPageHeight])];
     }
 }
 

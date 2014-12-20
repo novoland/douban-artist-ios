@@ -25,6 +25,7 @@
     #import "UIBarButtonItem+Common.h"
     #import "NSObject+ObjectMap.h"
     #import "UITableViewCell+Common.h"
+    #import "UILabel+Common.h"
     #import <SDWebImage/UIImageView+WebCache.h>
 
 #endif

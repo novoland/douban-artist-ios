@@ -76,6 +76,7 @@
 		C58A6D031A43A961000B45A5 /* DAMessageCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D021A43A961000B45A5 /* DAMessageCellV.m */; };
 		C58A6D061A43AFFD000B45A5 /* DAMessageC.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D051A43AFFD000B45A5 /* DAMessageC.m */; };
 		C58A6D0C1A456D2F000B45A5 /* UITableViewCell+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D0B1A456D2F000B45A5 /* UITableViewCell+Common.m */; };
+		C58A6D0F1A45BEC9000B45A5 /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D0E1A45BEC9000B45A5 /* UILabel+Common.m */; };
 		C59D28C31A41B95B00940363 /* DAAlbumC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C21A41B95B00940363 /* DAAlbumC.m */; };
 		C59D28C61A41BF6F00940363 /* DAAlbumCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C51A41BF6F00940363 /* DAAlbumCellV.m */; };
 		C59D28C91A41C61100940363 /* DAAlbumService.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C81A41C61100940363 /* DAAlbumService.m */; };
@@ -232,6 +233,8 @@
 		C58A6D051A43AFFD000B45A5 /* DAMessageC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAMessageC.m; sourceTree = "<group>"; };
 		C58A6D0A1A456D2F000B45A5 /* UITableViewCell+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Common.h"; sourceTree = "<group>"; };
 		C58A6D0B1A456D2F000B45A5 /* UITableViewCell+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Common.m"; sourceTree = "<group>"; };
+		C58A6D0D1A45BEC9000B45A5 /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		C58A6D0E1A45BEC9000B45A5 /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
 		C59D28C11A41B95B00940363 /* DAAlbumC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAlbumC.h; sourceTree = "<group>"; };
 		C59D28C21A41B95B00940363 /* DAAlbumC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAlbumC.m; sourceTree = "<group>"; };
 		C59D28C41A41BF6F00940363 /* DAAlbumCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAlbumCellV.h; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 		C5757DAD1A1DE96F008457F4 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				C58A6D0D1A45BEC9000B45A5 /* UILabel+Common.h */,
+				C58A6D0E1A45BEC9000B45A5 /* UILabel+Common.m */,
 				C58A6CF61A430CC3000B45A5 /* NSString+Common.h */,
 				C58A6CF71A430CC3000B45A5 /* NSString+Common.m */,
 				C58A6CEE1A430A8B000B45A5 /* UIView+Common.h */,
@@ -852,6 +857,7 @@
 				C59D28C61A41BF6F00940363 /* DAAlbumCellV.m in Sources */,
 				C58A6CAA1A430441000B45A5 /* UIButton+Bootstrap.m in Sources */,
 				C58A6CAF1A430441000B45A5 /* UIImageView+Common.m in Sources */,
+				C58A6D0F1A45BEC9000B45A5 /* UILabel+Common.m in Sources */,
 				C530E7DD1A23060300F1101E /* DZNSegmentedControl.m in Sources */,
 				C5757D731A19D030008457F4 /* DAAppDelegate.m in Sources */,
 				C5DF7B491A20B9E7005E64BE /* DATrackService.m in Sources */,
