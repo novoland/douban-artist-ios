@@ -10,6 +10,7 @@
 #import "DAArtistService.h"
 #import "DAEventCellV.h"
 #import "DAProfileSubListCellV.h"
+#import "PBWebViewController.h"
 
 @interface DAEventC ()
 
@@ -49,6 +50,18 @@
     DAEventCellV *cell = [[DAEventCellV alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:self.cellIdentifier];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *url = [[self.list objectAtIndex:indexPath.row] objectForKey:@"url"];
+    PBWebViewController *webViewController = [[PBWebViewController alloc] init];
+    webViewController.URL = [NSURL URLWithString:url];
+    [self.navigationController pushViewController:webViewController animated:YES];
+}
+
+- (NSString *) getBlankPlaceholderStr {
+    return @"该音乐人暂无活动";
 }
 
 @end

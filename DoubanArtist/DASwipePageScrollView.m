@@ -34,13 +34,14 @@
 {
     if(self.curPage == page)
         return;
+    NSLog(@"goto page: %ld",page);
     
     self.curPage = page;
     
     // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
-    [self loadScrollViewWithPage:page - 1];
+    //[self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
-    [self loadScrollViewWithPage:page + 1];
+    //[self loadScrollViewWithPage:page + 1];
     
     // update the scroll view to the appropriate page
     CGRect bounds = self.bounds;

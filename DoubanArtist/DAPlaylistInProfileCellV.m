@@ -11,6 +11,7 @@
 @implementation DAPlaylistInProfileCellV
 
 - (void) setModel:(NSDictionary *)model{
+    [self applyAppStyle];
     [super setModel:model];
     self.textLabel.text = [model objectForKey:@"title"];
 }

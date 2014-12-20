@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "DASwipePageScrollView.h"
+#import "UIScrollView+EmptyDataSet.h"
 
-@interface DARefreshableContentTableC : UITableViewController
+@interface DARefreshableContentTableC : UITableViewController<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property(assign,nonatomic) NSInteger refreshInterval;
 @property(assign,nonatomic) NSTimeInterval lastRefreshTime;
 @property(assign,nonatomic) NSTimeInterval refreshIntervalThreshold;
+
+// callback for scroll
+@property (copy, nonatomic) void (^scrollViewDidScrollCallback) (UIScrollView *);
 
 - (void) refreshed;
 - (void) mannualRefresh;

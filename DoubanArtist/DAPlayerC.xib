@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DAPlayerC">
@@ -21,24 +21,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="xQK-zD-kXf">
-                    <rect key="frame" x="44" y="2" width="45" height="45"/>
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-vd-zrI">
-                    <rect key="frame" x="0.0" y="0.0" width="36" height="50"/>
-                    <state key="normal" image="IconOrderedList">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="clickListBtn:" destination="-1" eventType="touchUpInside" id="Riw-Te-Rtb"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEW-u5-72u">
                     <rect key="frame" x="284" y="0.0" width="36" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="F0e-X9-Vq0"/>
                         <constraint firstAttribute="width" constant="36" id="KyX-Ig-52n"/>
                     </constraints>
-                    <state key="normal" image="IconAbout">
+                    <state key="normal" image="next">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -46,12 +37,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z2-cU-abZ">
-                    <rect key="frame" x="240" y="0.0" width="36" height="50"/>
+                    <rect key="frame" x="248" y="0.0" width="36" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="36" id="Pd9-ZX-YWH"/>
                         <constraint firstAttribute="height" constant="50" id="zch-6b-ktu"/>
                     </constraints>
-                    <state key="normal" image="IconAbout">
+                    <state key="normal" image="play">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -59,22 +50,22 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="这里放歌曲的名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-dd-Dza">
-                    <rect key="frame" x="101" y="5" width="125" height="19"/>
+                    <rect key="frame" x="58" y="4" width="125" height="19"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="汪虾堡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whi-z2-kZZ">
-                    <rect key="frame" x="101" y="28" width="125" height="19"/>
+                    <rect key="frame" x="58" y="26" width="125" height="19"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.9960784912109375" green="0.9960784912109375" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstItem="hEW-u5-72u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2ke-ZX-Ps3"/>
-                <constraint firstItem="hEW-u5-72u" firstAttribute="leading" secondItem="1z2-cU-abZ" secondAttribute="trailing" constant="8" id="A4u-1k-moR"/>
+                <constraint firstItem="hEW-u5-72u" firstAttribute="leading" secondItem="1z2-cU-abZ" secondAttribute="trailing" id="A4u-1k-moR"/>
                 <constraint firstItem="1z2-cU-abZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NbL-et-Tyo"/>
                 <constraint firstAttribute="trailing" secondItem="hEW-u5-72u" secondAttribute="trailing" id="Y0g-rq-ll0"/>
                 <constraint firstItem="hEW-u5-72u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yfr-Jd-gXO"/>
@@ -84,8 +75,8 @@
     </objects>
     <resources>
         <image name="Balloon" width="320" height="568"/>
-        <image name="IconAbout" width="16" height="16"/>
-        <image name="IconOrderedList" width="25" height="25"/>
+        <image name="next" width="16" height="16"/>
+        <image name="play" width="16" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

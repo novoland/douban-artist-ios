@@ -10,7 +10,10 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DATrackCellV.h"
 #import "DATrackService.h"
-#import "POP.h"
+#import "MBProgressHUD.h"
+#import "DAArtistService.h"
+#import "DAProfileC.h"
+#import "JDStatusBarNotification.h"
 
 @implementation DAHottestTrackC
 
@@ -30,8 +33,8 @@
     // Do any additional setup after loading the view from its nib.
     
     // custom xib-based cell
-    UINib *nib = [UINib nibWithNibName:@"DATrackCellV" bundle:nil];
-    [[self tableView] registerNib:nib forCellReuseIdentifier:@"trackListCell"];
+//    UINib *nib = [UINib nibWithNibName:@"DATrackCellV" bundle:nil];
+//    [[self tableView] registerNib:nib forCellReuseIdentifier:@"trackListCell"];
 }
 
 - (void) refresh:(UIRefreshControl *) refreshMe
@@ -47,14 +50,7 @@
 #pragma mark - TableView delegate & datasource
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSInteger INIT_CELL_HEIGHT = 72;
-    // If our cell is selected, return double height
-    if(self.curExpandIndex == indexPath.row) {
-        return INIT_CELL_HEIGHT + 40;
-    }
-    
-    // Cell isn't selected so return single height
-    return INIT_CELL_HEIGHT;
+    return kTrackCellNoLengthHeight;
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -63,27 +59,24 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DATrackCellV *cell =[tableView dequeueReusableCellWithIdentifier:@"trackListCell"];
     
+    if(!cell){
+        cell = [[DATrackCellV alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"trackListCell"];
+    }
+    
     NSDictionary *track = (NSDictionary *)[self.trackList objectAtIndex:indexPath.row];
-    cell.index = indexPath.row;
+    cell.rank = indexPath.row + 1;
     cell.track = track;
+    cell.isShowLength = NO;
     
     // 设置回调
-    cell.opBtnClickCallback = ^void(NSInteger index){
-        if(self.curExpandIndex == index){
-            self.curExpandIndex = -1;
-        }else
-            self.curExpandIndex = index;
-        [self.tableView beginUpdates];
-        [self.tableView endUpdates];
-        
-//        NSIndexPath *path = [[NSIndexPath alloc] init];
-//        path.section = 0;
-//        
-//        DATrackCellV *cell = (DATrackCellV *)[tableView cellForRowAtIndexPath:];
-        
-//        POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBounds];
-//        anim.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
-//        [layer pop_addAnimation:anim forKey:@"size"];
+    cell.imgClicked = ^void(NSDictionary *track){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
+        [DAArtistService findArtistById:[track objectForKey:@"artist_id"] callback:^void(NSDictionary *artist){
+            [hud hide:YES];
+            DAProfileC *profileC = [[DAProfileC alloc] init];
+            profileC.artist = artist;
+            [self.navigationController pushViewController:profileC animated:YES];
+        }];
     };
     
     return cell;
@@ -91,7 +84,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"dfdafdaf");
+    NSMutableDictionary *param = [NSMutableDictionary new];
+    [param setObject:_trackList forKey:@"playlist"];
+    [param setObject:[NSNumber numberWithLong:indexPath.row] forKey:@"index"];
+    
+    NSNotification *n = [NSNotification notificationWithName:@"player.playList" object:self userInfo:param];
+    
+    [[NSNotificationCenter defaultCenter] postNotification:n];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

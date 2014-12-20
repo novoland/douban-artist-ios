@@ -79,9 +79,6 @@
     DAProfileC *profileC = [[DAProfileC alloc] init];
     profileC.artist = artist;
     [self.navigationController pushViewController:profileC animated:YES];
-//    [DAArtistService findById:[artist valueForKey:@"id"] callback:^(NSDictionary *artist){
-//        profileC.artist = artist;
-//    }];
 }
 
 - (void)didReceiveMemoryWarning

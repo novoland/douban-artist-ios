@@ -50,42 +50,6 @@
     return cell;
 }
 
-#pragma mark - Table view delegate
-
--(void)scrollViewDidScroll:(UIScrollView *)tableView {
-    
-//    // 如果表格向下滚动的距离超过了阈值，将 page view 调整为填满 nav controller，并移动 tab bar 的位置。
-//    if (tableView.contentOffset.y >= 100 && !_pagableViewExpanded){
-//        // 状态栏 + navbar 的高度
-//        CGFloat y = [UIApplication sharedApplication].statusBarFrame.size.height + self.navigationController.navigationBar.frame.size.height;
-//        
-//        CGRect newPageViewFrame = CGRectMake(0, y, self.view.frame.size.width, self.view.frame.size.height - y);
-//        CGRect newTabFrame = CGRectMake(0, y, CGRectGetWidth(_tabBar.frame), CGRectGetHeight(_tabBar.frame));
-//        
-//        [UIView animateWithDuration:0.4
-//                         animations:^{
-//                             _pagableView.frame= newPageViewFrame;
-//                             _tabBar.frame = newTabFrame;
-//                         }];
-//        _pagableViewExpanded = YES;
-//        return;
-//    }
-//    
-//    // 如果表格滚动距离在阈值内，还原 page view 及 tab bar。
-//    if (tableView.contentOffset.y < 100 && _pagableViewExpanded){
-//        [UIView animateWithDuration:0.4
-//                         animations:^{
-//                             _pagableView.frame= _pagableViewOriginalFrame;
-//                             _tabBar.frame = CGRectMake(0, CGRectGetMinY(_pagableViewOriginalFrame),self.view.frame.size.width, self.tabBar.frame.size.height);
-//                         }];
-//        _pagableViewExpanded = NO;
-//    }
-    
-    if (self.scrollViewDidScrollCallback){
-        self.scrollViewDidScrollCallback(tableView);
-    }
-}
-
 #pragma mark - 留给子类实现的方法
 - (DAProfileSubListCellV *) createCellForIndexPath:(NSIndexPath *) indexPath{
     return nil;

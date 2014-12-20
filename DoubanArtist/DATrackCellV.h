@@ -8,17 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
+#define kTrackCellFullHeight 70
+#define kTrackCellNoLengthHeight 62
+
 // callbacks, 参数是 cell 的 index
 typedef void (^OpBtnClicked)(NSInteger);
 
 @interface DATrackCellV : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *img;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *artistLabel;
-@property (weak, nonatomic) IBOutlet UIButton *opBtn;
-@property (weak, nonatomic) IBOutlet UIView *cellContentView;
-@property (assign,nonatomic) NSInteger index;
+// ui controls
+@property (strong, nonatomic) UILabel *rankLabel;
+// img -- img
+// textLabel -- name
+// detailLabel -- artist
+@property (strong, nonatomic) UILabel *lengthLabel;
+@property (strong, nonatomic) UIButton *opBtn;
+
+// 控制控件是否显示
+@property (assign, nonatomic) BOOL isShowRank;
+@property (assign, nonatomic) BOOL isShowImg;
+@property (assign, nonatomic) BOOL isShowLength;
+@property (assign, nonatomic) BOOL isShowArtist;
+@property (assign, nonatomic) BOOL isShowOpBtn;
+
+// data
+@property (assign,nonatomic) NSInteger rank;
 /*
  {
  "count": 16591,
@@ -35,9 +49,8 @@ typedef void (^OpBtnClicked)(NSInteger);
  */
 @property (strong,nonatomic) NSDictionary *track;
 
-//// block 分配在栈上，退栈则销毁，因此用 copy
+/// block 分配在栈上，退栈则销毁，因此用 copy
 @property (copy,nonatomic) OpBtnClicked opBtnClickCallback;
-
-- (IBAction)clickOpBtn:(id)sender;
+@property (copy,nonatomic) void(^imgClicked)(NSDictionary *track);
 
 @end

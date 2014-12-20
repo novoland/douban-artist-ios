@@ -17,6 +17,9 @@
 #import "DAPlaylistInProfileC.h"
 #import "DAEventC.h"
 #import "DAUtils.h"
+#import "DAAlbumC.h"
+#import "DAUpdateC.h"
+#import "DAMessageC.h"
 
 @interface DAProfileC ()<DZNSegmentedControlDelegate>
 
@@ -47,6 +50,10 @@
  **/
 - (void) viewWillDisappear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self restoreNavBar];
+}
+
+- (void) restoreNavBar{
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = nil;
     
@@ -54,17 +61,12 @@
     [self.navigationController.navigationBar setTitleTextAttributes:nil];
 }
 
-- (void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [self setupNavBar];
-}
-
 - (void) setupNavBar{
     // transparent nav bar
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     
-    // nav bar color
+    // tint color for nav bar
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
@@ -75,7 +77,7 @@
     
     [self setupNavBar];
     
-    // view 与 model 关联
+    // 根据 model 正确设置 view 的展示内容
     self.title = [_artist valueForKey:@"name"];
     self.genreLabel.text = [[(NSString *)[_artist valueForKey:@"style"] componentsSeparatedByString:@":"] lastObject];
     self.followersLabel.text = [NSString stringWithFormat:@"%@ 关注", [_artist valueForKey:@"follower"]];
@@ -90,20 +92,18 @@
 - (void) viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     
-    // 在这里调整布局
+    // 在这里调整 layout
     // blur bg img size adjustment
     [self.blurBgImg setFrame:CGRectMake(0, 0, self.view.frame.size.width, CGRectGetWidth(self.view.frame))];
     
     // pageable view 的位置
-    _pagableViewOriginalFrame = CGRectMake(0, CGRectGetMaxY(self.genreLabel.frame) + 12, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - CGRectGetMaxY(self.genreLabel.frame));
+    CGFloat bottomY = CGRectGetMaxY(self.genreLabel.frame) + 12;
     
     // tabbar 的位置
-    [self.tabBar setFrame:CGRectMake(0, CGRectGetMinY(_pagableViewOriginalFrame),self.view.frame.size.width, self.tabBar.frame.size.height)];
+    [self.tabBar setFrame:CGRectMake(0, bottomY,self.view.frame.size.width, self.tabBar.frame.size.height)];
     
-    // pagable view 的 inset，刚好是 tabbar 的高度
-    [_pagableView setContentInset:UIEdgeInsetsMake(_tabBar.frame.size.height, 0, 0, 0)];
-    
-    [_pagableView setFrame:_pagableViewOriginalFrame];
+    bottomY += self.tabBar.frame.size.height;
+    [_pagableView setFrame:CGRectMake(0, bottomY, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - bottomY)];
     
     if(_tabBar.selectedSegmentIndex == -1){
         _tabBar.selectedSegmentIndex = 0;
@@ -113,7 +113,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     
-    // view 的初始化和 setup
+    // 在 view 加载后进行 view tree 的构造及初始化
     
     // blur bg image
     UIImage *defaultBgImg = [UIImage imageNamed:@"Stars"];
@@ -138,6 +138,7 @@
 
 }
 
+//  创建 tabbar：@"曲库", @"活动", @"相册", @"动态", @"留言"
 - (DZNSegmentedControl *)tabBar
 {
     if (!_tabBar)
@@ -171,10 +172,16 @@
     return self;
 }
 
+// 创建 tab 内容页对应的 vc 数组
 - (NSArray *) subControllers{
     if(!_subControllers){
         DAPlaylistInProfileC * one = [[DAPlaylistInProfileC alloc] initWithArtist:self.artist cellIdentifier:@"playlistInProfileCell"];
         DAEventC *two = [[DAEventC alloc] initWithArtist:self.artist cellIdentifier:@"eventCell"];
+        DAAlbumC *three = [[DAAlbumC alloc] initWithArtist:self.artist cellIdentifier:@"albumCell"];
+        DAUpdateC *four = [[DAUpdateC alloc] initWithArtist:self.artist cellIdentifier:@"updateCell"];
+        DAMessageC *five = [[DAMessageC alloc] initWithArtist:self.artist cellIdentifier:@"messageCell"];
+        
+        
         
         // 为这些子 controller 设置滚动监听器，实现自适应 page view
         void (^scrollCb)(UIScrollView *) = ^void(UIScrollView *tableView){
@@ -205,10 +212,10 @@
                     _pagableViewExpanded = NO;
                 }
         };
-        one.scrollViewDidScrollCallback = scrollCb;
-        two.scrollViewDidScrollCallback = scrollCb;
+//        one.scrollViewDidScrollCallback = scrollCb;
+//        two.scrollViewDidScrollCallback = scrollCb;
         
-        _subControllers = [NSArray arrayWithObjects:one, two, nil];
+        _subControllers = [NSArray arrayWithObjects:one, two, three, four, five, nil];
     }
     return _subControllers;
 }

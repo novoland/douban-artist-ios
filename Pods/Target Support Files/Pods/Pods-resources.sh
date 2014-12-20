@@ -72,6 +72,7 @@ install_resource()
                     install_resource "LTUpdate/LTUpdate/LTI18N/zh-Hans.lproj"
                     install_resource "LTUpdate/LTUpdate/LTI18N/zh-Hant-TW.lproj"
                     install_resource "LTUpdate/LTUpdate/LTI18N/zh-Hant.lproj"
+                    install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
           
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then

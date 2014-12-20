@@ -7,7 +7,7 @@
 //
 
 #import "DAEventCellV.h"
-#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 @implementation DAEventCellV
 
@@ -21,6 +21,8 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    
+    [self applyAppStyle];
     self.imageView.frame = CGRectMake(10,10,40,40);
     self.textLabel.frame = CGRectMake(60,self.textLabel.frame.origin.y,self.textLabel.frame.size.width - 60 + self.textLabel.frame.origin.x,self.textLabel.frame.size.height);
     self.detailTextLabel.frame = CGRectMake(60,self.detailTextLabel.frame.origin.y + 4,self.detailTextLabel.frame.size.width - 60 + self.detailTextLabel.frame.origin.x,self.detailTextLabel.frame.size.height);

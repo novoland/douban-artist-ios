@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C52711DE1A1F803E004CD020 /* DATrackCellV.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52711DD1A1F803E004CD020 /* DATrackCellV.xib */; };
 		C52711E11A1F806B004CD020 /* DATrackCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C52711E01A1F806B004CD020 /* DATrackCellV.m */; };
 		C530E7CC1A22302700F1101E /* DAProfileC.m in Sources */ = {isa = PBXBuildFile; fileRef = C530E7CA1A22302700F1101E /* DAProfileC.m */; };
 		C530E7CD1A22302700F1101E /* DAProfileC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C530E7CB1A22302700F1101E /* DAProfileC.xib */; };
@@ -42,6 +41,44 @@
 		C5757DA71A1D9613008457F4 /* DAPlayerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5757DA51A1D9613008457F4 /* DAPlayerC.xib */; };
 		C5757DAB1A1DDE6A008457F4 /* DAHottestC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DA91A1DDE6A008457F4 /* DAHottestC.m */; };
 		C5757DB01A1DE998008457F4 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = C5757DAF1A1DE998008457F4 /* UIView+Borders.m */; };
+		C58A6C801A429BFC000B45A5 /* DAUpdateC.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C7F1A429BFC000B45A5 /* DAUpdateC.m */; };
+		C58A6C831A429FBC000B45A5 /* DAUpdateCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C821A429FBC000B45A5 /* DAUpdateCellV.m */; };
+		C58A6CA41A430441000B45A5 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C851A430441000B45A5 /* NSDate+Common.m */; };
+		C58A6CA51A430441000B45A5 /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C871A430441000B45A5 /* NSDate+convenience.m */; };
+		C58A6CA71A430441000B45A5 /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C8B1A430441000B45A5 /* NSObject+ObjectMap.m */; };
+		C58A6CA91A430441000B45A5 /* UIBarButtonItem+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C8F1A430441000B45A5 /* UIBarButtonItem+Common.m */; };
+		C58A6CAA1A430441000B45A5 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C911A430441000B45A5 /* UIButton+Bootstrap.m */; };
+		C58A6CAC1A430441000B45A5 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C951A430441000B45A5 /* UIColor+expanded.m */; };
+		C58A6CAD1A430441000B45A5 /* UIDevice+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C971A430441000B45A5 /* UIDevice+Info.m */; };
+		C58A6CAE1A430441000B45A5 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C991A430441000B45A5 /* UIImage+Common.m */; };
+		C58A6CAF1A430441000B45A5 /* UIImageView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6C9B1A430441000B45A5 /* UIImageView+Common.m */; };
+		C58A6CDA1A4306D9000B45A5 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CB61A4306D9000B45A5 /* AbstractActionSheetPicker.m */; };
+		C58A6CDB1A4306D9000B45A5 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CB81A4306D9000B45A5 /* ActionSheetCustomPicker.m */; };
+		C58A6CDC1A4306D9000B45A5 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CBB1A4306D9000B45A5 /* ActionSheetDatePicker.m */; };
+		C58A6CDD1A4306D9000B45A5 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CBD1A4306D9000B45A5 /* ActionSheetDistancePicker.m */; };
+		C58A6CDE1A4306D9000B45A5 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CBF1A4306D9000B45A5 /* ActionSheetLocalePicker.m */; };
+		C58A6CDF1A4306D9000B45A5 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CC11A4306D9000B45A5 /* ActionSheetStringPicker.m */; };
+		C58A6CE01A4306D9000B45A5 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CC31A4306D9000B45A5 /* DistancePickerView.m */; };
+		C58A6CE11A4306D9000B45A5 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CC51A4306D9000B45A5 /* SWActionSheet.m */; };
+		C58A6CE21A4306D9000B45A5 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CC81A4306D9000B45A5 /* FAImageView.m */; };
+		C58A6CE31A4306D9000B45A5 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CCA1A4306D9000B45A5 /* NSString+FontAwesome.m */; };
+		C58A6CE41A4306D9000B45A5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C58A6CCC1A4306D9000B45A5 /* FontAwesome.ttf */; };
+		C58A6CE51A4306D9000B45A5 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CCE1A4306D9000B45A5 /* UIFont+FontAwesome.m */; };
+		C58A6CE61A4306D9000B45A5 /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CD01A4306D9000B45A5 /* UIImage+FontAwesome.m */; };
+		C58A6CE71A4306D9000B45A5 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CD31A4306D9000B45A5 /* NSDate+Helper.m */; };
+		C58A6CE81A4306D9000B45A5 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = C58A6CD41A4306D9000B45A5 /* README.textile */; };
+		C58A6CE91A4306D9000B45A5 /* UIAwesomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CD71A4306D9000B45A5 /* UIAwesomeButton.m */; };
+		C58A6CEA1A4306D9000B45A5 /* UIButton+PPiAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CD91A4306D9000B45A5 /* UIButton+PPiAwesome.m */; };
+		C58A6CED1A4307D0000B45A5 /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CEC1A4307D0000B45A5 /* UIButton+Common.m */; };
+		C58A6CF01A430A8B000B45A5 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CEF1A430A8B000B45A5 /* UIView+Common.m */; };
+		C58A6CF51A430B9A000B45A5 /* NSString+Emojize.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CF41A430B9A000B45A5 /* NSString+Emojize.m */; };
+		C58A6CF81A430CC3000B45A5 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6CF71A430CC3000B45A5 /* NSString+Common.m */; };
+		C58A6D031A43A961000B45A5 /* DAMessageCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D021A43A961000B45A5 /* DAMessageCellV.m */; };
+		C58A6D061A43AFFD000B45A5 /* DAMessageC.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D051A43AFFD000B45A5 /* DAMessageC.m */; };
+		C58A6D0C1A456D2F000B45A5 /* UITableViewCell+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C58A6D0B1A456D2F000B45A5 /* UITableViewCell+Common.m */; };
+		C59D28C31A41B95B00940363 /* DAAlbumC.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C21A41B95B00940363 /* DAAlbumC.m */; };
+		C59D28C61A41BF6F00940363 /* DAAlbumCellV.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C51A41BF6F00940363 /* DAAlbumCellV.m */; };
+		C59D28C91A41C61100940363 /* DAAlbumService.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D28C81A41C61100940363 /* DAAlbumService.m */; };
 		C5CE7E3B1A1E29E400EC9D7E /* DAHottestTrackC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */; };
 		C5CE7E401A1E2A0D00EC9D7E /* DAHottestArtistC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */; };
 		C5D88D3C1A2170EA00F00125 /* DAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D88D3B1A2170EA00F00125 /* DAConstants.m */; };
@@ -67,7 +104,6 @@
 /* Begin PBXFileReference section */
 		1E38FFBC73BE57FB5804A490 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		65E69AE3B237453E95586381 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C52711DD1A1F803E004CD020 /* DATrackCellV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DATrackCellV.xib; sourceTree = "<group>"; };
 		C52711DF1A1F806B004CD020 /* DATrackCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATrackCellV.h; sourceTree = "<group>"; };
 		C52711E01A1F806B004CD020 /* DATrackCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATrackCellV.m; sourceTree = "<group>"; };
 		C530E7C91A22302700F1101E /* DAProfileC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProfileC.h; sourceTree = "<group>"; };
@@ -126,6 +162,82 @@
 		C5757DA91A1DDE6A008457F4 /* DAHottestC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHottestC.m; sourceTree = "<group>"; };
 		C5757DAE1A1DE998008457F4 /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
 		C5757DAF1A1DE998008457F4 /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		C58A6C7E1A429BFC000B45A5 /* DAUpdateC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAUpdateC.h; sourceTree = "<group>"; };
+		C58A6C7F1A429BFC000B45A5 /* DAUpdateC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAUpdateC.m; sourceTree = "<group>"; };
+		C58A6C811A429FBC000B45A5 /* DAUpdateCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAUpdateCellV.h; sourceTree = "<group>"; };
+		C58A6C821A429FBC000B45A5 /* DAUpdateCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAUpdateCellV.m; sourceTree = "<group>"; };
+		C58A6C841A430441000B45A5 /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		C58A6C851A430441000B45A5 /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		C58A6C861A430441000B45A5 /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
+		C58A6C871A430441000B45A5 /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+convenience.m"; sourceTree = "<group>"; };
+		C58A6C8A1A430441000B45A5 /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		C58A6C8B1A430441000B45A5 /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
+		C58A6C8E1A430441000B45A5 /* UIBarButtonItem+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Common.h"; sourceTree = "<group>"; };
+		C58A6C8F1A430441000B45A5 /* UIBarButtonItem+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Common.m"; sourceTree = "<group>"; };
+		C58A6C901A430441000B45A5 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		C58A6C911A430441000B45A5 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		C58A6C941A430441000B45A5 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		C58A6C951A430441000B45A5 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		C58A6C961A430441000B45A5 /* UIDevice+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Info.h"; sourceTree = "<group>"; };
+		C58A6C971A430441000B45A5 /* UIDevice+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Info.m"; sourceTree = "<group>"; };
+		C58A6C981A430441000B45A5 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		C58A6C991A430441000B45A5 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		C58A6C9A1A430441000B45A5 /* UIImageView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Common.h"; sourceTree = "<group>"; };
+		C58A6C9B1A430441000B45A5 /* UIImageView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Common.m"; sourceTree = "<group>"; };
+		C58A6CB51A4306D9000B45A5 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		C58A6CB61A4306D9000B45A5 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		C58A6CB71A4306D9000B45A5 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		C58A6CB81A4306D9000B45A5 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		C58A6CB91A4306D9000B45A5 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		C58A6CBA1A4306D9000B45A5 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		C58A6CBB1A4306D9000B45A5 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		C58A6CBC1A4306D9000B45A5 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		C58A6CBD1A4306D9000B45A5 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		C58A6CBE1A4306D9000B45A5 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		C58A6CBF1A4306D9000B45A5 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		C58A6CC01A4306D9000B45A5 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		C58A6CC11A4306D9000B45A5 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		C58A6CC21A4306D9000B45A5 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		C58A6CC31A4306D9000B45A5 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		C58A6CC41A4306D9000B45A5 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
+		C58A6CC51A4306D9000B45A5 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
+		C58A6CC71A4306D9000B45A5 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		C58A6CC81A4306D9000B45A5 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		C58A6CC91A4306D9000B45A5 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		C58A6CCA1A4306D9000B45A5 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		C58A6CCC1A4306D9000B45A5 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		C58A6CCD1A4306D9000B45A5 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		C58A6CCE1A4306D9000B45A5 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		C58A6CCF1A4306D9000B45A5 /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		C58A6CD01A4306D9000B45A5 /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		C58A6CD21A4306D9000B45A5 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		C58A6CD31A4306D9000B45A5 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		C58A6CD41A4306D9000B45A5 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		C58A6CD61A4306D9000B45A5 /* UIAwesomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAwesomeButton.h; sourceTree = "<group>"; };
+		C58A6CD71A4306D9000B45A5 /* UIAwesomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAwesomeButton.m; sourceTree = "<group>"; };
+		C58A6CD81A4306D9000B45A5 /* UIButton+PPiAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PPiAwesome.h"; sourceTree = "<group>"; };
+		C58A6CD91A4306D9000B45A5 /* UIButton+PPiAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PPiAwesome.m"; sourceTree = "<group>"; };
+		C58A6CEB1A4307D0000B45A5 /* UIButton+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Common.h"; sourceTree = "<group>"; };
+		C58A6CEC1A4307D0000B45A5 /* UIButton+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Common.m"; sourceTree = "<group>"; };
+		C58A6CEE1A430A8B000B45A5 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		C58A6CEF1A430A8B000B45A5 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		C58A6CF21A430B9A000B45A5 /* emojis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emojis.h; sourceTree = "<group>"; };
+		C58A6CF31A430B9A000B45A5 /* NSString+Emojize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emojize.h"; sourceTree = "<group>"; };
+		C58A6CF41A430B9A000B45A5 /* NSString+Emojize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emojize.m"; sourceTree = "<group>"; };
+		C58A6CF61A430CC3000B45A5 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		C58A6CF71A430CC3000B45A5 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		C58A6D011A43A961000B45A5 /* DAMessageCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAMessageCellV.h; sourceTree = "<group>"; };
+		C58A6D021A43A961000B45A5 /* DAMessageCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAMessageCellV.m; sourceTree = "<group>"; };
+		C58A6D041A43AFFD000B45A5 /* DAMessageC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAMessageC.h; sourceTree = "<group>"; };
+		C58A6D051A43AFFD000B45A5 /* DAMessageC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAMessageC.m; sourceTree = "<group>"; };
+		C58A6D0A1A456D2F000B45A5 /* UITableViewCell+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Common.h"; sourceTree = "<group>"; };
+		C58A6D0B1A456D2F000B45A5 /* UITableViewCell+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Common.m"; sourceTree = "<group>"; };
+		C59D28C11A41B95B00940363 /* DAAlbumC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAlbumC.h; sourceTree = "<group>"; };
+		C59D28C21A41B95B00940363 /* DAAlbumC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAlbumC.m; sourceTree = "<group>"; };
+		C59D28C41A41BF6F00940363 /* DAAlbumCellV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAlbumCellV.h; sourceTree = "<group>"; };
+		C59D28C51A41BF6F00940363 /* DAAlbumCellV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAlbumCellV.m; sourceTree = "<group>"; };
+		C59D28C71A41C61100940363 /* DAAlbumService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAlbumService.h; sourceTree = "<group>"; };
+		C59D28C81A41C61100940363 /* DAAlbumService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAlbumService.m; sourceTree = "<group>"; };
 		C5CE7E381A1E29E400EC9D7E /* DAHottestTrackC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHottestTrackC.h; sourceTree = "<group>"; };
 		C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHottestTrackC.m; sourceTree = "<group>"; };
 		C5CE7E3D1A1E2A0D00EC9D7E /* DAHottestArtistC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHottestArtistC.h; sourceTree = "<group>"; };
@@ -183,6 +295,11 @@
 		C530E7CE1A2239CD00F1101E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				C58A6CF11A430B9A000B45A5 /* NSStringEmojize */,
+				C58A6CB41A4306D9000B45A5 /* ActionSheetPicker */,
+				C58A6CC61A4306D9000B45A5 /* FontAwesome+iOS */,
+				C58A6CD11A4306D9000B45A5 /* NSDate+Helper */,
+				C58A6CD51A4306D9000B45A5 /* PPiAwesomeButton */,
 				C530E7DA1A2305F500F1101E /* DZNSegmentedControl */,
 				C530E7D61A22B1D900F1101E /* Colours */,
 				C530E7CF1A2239E400F1101E /* UIImage+BlurredFrame */,
@@ -313,22 +430,12 @@
 		C5757D991A1B009B008457F4 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				C5420FDB1A24975C0058BFFF /* DAPlaylistInProfileCellV.h */,
-				C5420FDC1A24975C0058BFFF /* DAPlaylistInProfileCellV.m */,
+				C5CAF94C1A41424C00519655 /* cell */,
 				C530E7CB1A22302700F1101E /* DAProfileC.xib */,
-				C5D88D441A21BB3000F00125 /* DAArtistCellV.h */,
-				C5D88D451A21BB3000F00125 /* DAArtistCellV.m */,
 				C5757DA51A1D9613008457F4 /* DAPlayerC.xib */,
 				C5757D9A1A1B00CC008457F4 /* DALeftMenuC.xib */,
-				C52711DD1A1F803E004CD020 /* DATrackCellV.xib */,
-				C52711DF1A1F806B004CD020 /* DATrackCellV.h */,
-				C52711E01A1F806B004CD020 /* DATrackCellV.m */,
 				C5FA9F841A2315B000FFFEC6 /* DASwipePageScrollView.h */,
 				C5FA9F851A2315B000FFFEC6 /* DASwipePageScrollView.m */,
-				C5420FD21A2474E50058BFFF /* DAProfileSubListCellV.h */,
-				C5420FD31A2474E50058BFFF /* DAProfileSubListCellV.m */,
-				C5420FD51A2478740058BFFF /* DAEventCellV.h */,
-				C5420FD61A2478740058BFFF /* DAEventCellV.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -336,28 +443,15 @@
 		C5757D9C1A1C73E7008457F4 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				C59D28C01A41B06400940363 /* index */,
+				C59D28BF1A41B04800940363 /* player */,
+				C59D28BB1A41AFAF00940363 /* profile */,
 				C5757D9D1A1C79AC008457F4 /* DALeftMenuC.h */,
 				C5757D9E1A1C79AC008457F4 /* DALeftMenuC.m */,
 				C5757DA01A1D95EB008457F4 /* DARootC.h */,
 				C5757DA11A1D95EB008457F4 /* DARootC.m */,
-				C5757DA31A1D9613008457F4 /* DAPlayerC.h */,
-				C5757DA41A1D9613008457F4 /* DAPlayerC.m */,
-				C5757DA81A1DDE6A008457F4 /* DAHottestC.h */,
-				C5757DA91A1DDE6A008457F4 /* DAHottestC.m */,
-				C5CE7E381A1E29E400EC9D7E /* DAHottestTrackC.h */,
-				C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */,
-				C5CE7E3D1A1E2A0D00EC9D7E /* DAHottestArtistC.h */,
-				C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */,
 				C5D88D411A21B16200F00125 /* DARefreshableContentTableC.h */,
 				C5D88D421A21B16200F00125 /* DARefreshableContentTableC.m */,
-				C530E7C91A22302700F1101E /* DAProfileC.h */,
-				C530E7CA1A22302700F1101E /* DAProfileC.m */,
-				C5420FBF1A24534E0058BFFF /* DAPlaylistInProfileC.h */,
-				C5420FC01A24534E0058BFFF /* DAPlaylistInProfileC.m */,
-				C5420FCB1A2471DF0058BFFF /* DAEventC.h */,
-				C5420FCC1A2471DF0058BFFF /* DAEventC.m */,
-				C5420FCE1A2472160058BFFF /* DAProfileSubListC.h */,
-				C5420FCF1A2472160058BFFF /* DAProfileSubListC.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -365,10 +459,197 @@
 		C5757DAD1A1DE96F008457F4 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				C58A6CF61A430CC3000B45A5 /* NSString+Common.h */,
+				C58A6CF71A430CC3000B45A5 /* NSString+Common.m */,
+				C58A6CEE1A430A8B000B45A5 /* UIView+Common.h */,
+				C58A6CEF1A430A8B000B45A5 /* UIView+Common.m */,
+				C58A6CEB1A4307D0000B45A5 /* UIButton+Common.h */,
+				C58A6CEC1A4307D0000B45A5 /* UIButton+Common.m */,
+				C58A6C841A430441000B45A5 /* NSDate+Common.h */,
+				C58A6C851A430441000B45A5 /* NSDate+Common.m */,
+				C58A6C861A430441000B45A5 /* NSDate+convenience.h */,
+				C58A6C871A430441000B45A5 /* NSDate+convenience.m */,
+				C58A6C8A1A430441000B45A5 /* NSObject+ObjectMap.h */,
+				C58A6C8B1A430441000B45A5 /* NSObject+ObjectMap.m */,
+				C58A6C8E1A430441000B45A5 /* UIBarButtonItem+Common.h */,
+				C58A6C8F1A430441000B45A5 /* UIBarButtonItem+Common.m */,
+				C58A6C901A430441000B45A5 /* UIButton+Bootstrap.h */,
+				C58A6C911A430441000B45A5 /* UIButton+Bootstrap.m */,
+				C58A6C941A430441000B45A5 /* UIColor+expanded.h */,
+				C58A6C951A430441000B45A5 /* UIColor+expanded.m */,
+				C58A6C961A430441000B45A5 /* UIDevice+Info.h */,
+				C58A6C971A430441000B45A5 /* UIDevice+Info.m */,
+				C58A6C981A430441000B45A5 /* UIImage+Common.h */,
+				C58A6C991A430441000B45A5 /* UIImage+Common.m */,
+				C58A6C9A1A430441000B45A5 /* UIImageView+Common.h */,
+				C58A6C9B1A430441000B45A5 /* UIImageView+Common.m */,
 				C5757DAE1A1DE998008457F4 /* UIView+Borders.h */,
 				C5757DAF1A1DE998008457F4 /* UIView+Borders.m */,
+				C58A6D0A1A456D2F000B45A5 /* UITableViewCell+Common.h */,
+				C58A6D0B1A456D2F000B45A5 /* UITableViewCell+Common.m */,
 			);
 			name = category;
+			sourceTree = "<group>";
+		};
+		C58A6CB41A4306D9000B45A5 /* ActionSheetPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CB51A4306D9000B45A5 /* AbstractActionSheetPicker.h */,
+				C58A6CB61A4306D9000B45A5 /* AbstractActionSheetPicker.m */,
+				C58A6CB71A4306D9000B45A5 /* ActionSheetCustomPicker.h */,
+				C58A6CB81A4306D9000B45A5 /* ActionSheetCustomPicker.m */,
+				C58A6CB91A4306D9000B45A5 /* ActionSheetCustomPickerDelegate.h */,
+				C58A6CBA1A4306D9000B45A5 /* ActionSheetDatePicker.h */,
+				C58A6CBB1A4306D9000B45A5 /* ActionSheetDatePicker.m */,
+				C58A6CBC1A4306D9000B45A5 /* ActionSheetDistancePicker.h */,
+				C58A6CBD1A4306D9000B45A5 /* ActionSheetDistancePicker.m */,
+				C58A6CBE1A4306D9000B45A5 /* ActionSheetLocalePicker.h */,
+				C58A6CBF1A4306D9000B45A5 /* ActionSheetLocalePicker.m */,
+				C58A6CC01A4306D9000B45A5 /* ActionSheetStringPicker.h */,
+				C58A6CC11A4306D9000B45A5 /* ActionSheetStringPicker.m */,
+				C58A6CC21A4306D9000B45A5 /* DistancePickerView.h */,
+				C58A6CC31A4306D9000B45A5 /* DistancePickerView.m */,
+				C58A6CC41A4306D9000B45A5 /* SWActionSheet.h */,
+				C58A6CC51A4306D9000B45A5 /* SWActionSheet.m */,
+			);
+			path = ActionSheetPicker;
+			sourceTree = "<group>";
+		};
+		C58A6CC61A4306D9000B45A5 /* FontAwesome+iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CC71A4306D9000B45A5 /* FAImageView.h */,
+				C58A6CC81A4306D9000B45A5 /* FAImageView.m */,
+				C58A6CC91A4306D9000B45A5 /* NSString+FontAwesome.h */,
+				C58A6CCA1A4306D9000B45A5 /* NSString+FontAwesome.m */,
+				C58A6CCB1A4306D9000B45A5 /* Resources */,
+				C58A6CCD1A4306D9000B45A5 /* UIFont+FontAwesome.h */,
+				C58A6CCE1A4306D9000B45A5 /* UIFont+FontAwesome.m */,
+				C58A6CCF1A4306D9000B45A5 /* UIImage+FontAwesome.h */,
+				C58A6CD01A4306D9000B45A5 /* UIImage+FontAwesome.m */,
+			);
+			path = "FontAwesome+iOS";
+			sourceTree = "<group>";
+		};
+		C58A6CCB1A4306D9000B45A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CCC1A4306D9000B45A5 /* FontAwesome.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C58A6CD11A4306D9000B45A5 /* NSDate+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CD21A4306D9000B45A5 /* NSDate+Helper.h */,
+				C58A6CD31A4306D9000B45A5 /* NSDate+Helper.m */,
+				C58A6CD41A4306D9000B45A5 /* README.textile */,
+			);
+			path = "NSDate+Helper";
+			sourceTree = "<group>";
+		};
+		C58A6CD51A4306D9000B45A5 /* PPiAwesomeButton */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CD61A4306D9000B45A5 /* UIAwesomeButton.h */,
+				C58A6CD71A4306D9000B45A5 /* UIAwesomeButton.m */,
+				C58A6CD81A4306D9000B45A5 /* UIButton+PPiAwesome.h */,
+				C58A6CD91A4306D9000B45A5 /* UIButton+PPiAwesome.m */,
+			);
+			path = PPiAwesomeButton;
+			sourceTree = "<group>";
+		};
+		C58A6CF11A430B9A000B45A5 /* NSStringEmojize */ = {
+			isa = PBXGroup;
+			children = (
+				C58A6CF21A430B9A000B45A5 /* emojis.h */,
+				C58A6CF31A430B9A000B45A5 /* NSString+Emojize.h */,
+				C58A6CF41A430B9A000B45A5 /* NSString+Emojize.m */,
+			);
+			path = NSStringEmojize;
+			sourceTree = "<group>";
+		};
+		C59D28BB1A41AFAF00940363 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				C59D28BC1A41AFDF00940363 /* sublist */,
+				C530E7C91A22302700F1101E /* DAProfileC.h */,
+				C530E7CA1A22302700F1101E /* DAProfileC.m */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		C59D28BC1A41AFDF00940363 /* sublist */ = {
+			isa = PBXGroup;
+			children = (
+				C59D28BE1A41B01400940363 /* base */,
+				C5420FBF1A24534E0058BFFF /* DAPlaylistInProfileC.h */,
+				C5420FC01A24534E0058BFFF /* DAPlaylistInProfileC.m */,
+				C5420FCB1A2471DF0058BFFF /* DAEventC.h */,
+				C5420FCC1A2471DF0058BFFF /* DAEventC.m */,
+				C59D28C11A41B95B00940363 /* DAAlbumC.h */,
+				C59D28C21A41B95B00940363 /* DAAlbumC.m */,
+				C58A6C7E1A429BFC000B45A5 /* DAUpdateC.h */,
+				C58A6C7F1A429BFC000B45A5 /* DAUpdateC.m */,
+				C58A6D041A43AFFD000B45A5 /* DAMessageC.h */,
+				C58A6D051A43AFFD000B45A5 /* DAMessageC.m */,
+			);
+			name = sublist;
+			sourceTree = "<group>";
+		};
+		C59D28BE1A41B01400940363 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				C5420FCE1A2472160058BFFF /* DAProfileSubListC.h */,
+				C5420FCF1A2472160058BFFF /* DAProfileSubListC.m */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		C59D28BF1A41B04800940363 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				C5757DA31A1D9613008457F4 /* DAPlayerC.h */,
+				C5757DA41A1D9613008457F4 /* DAPlayerC.m */,
+			);
+			name = player;
+			sourceTree = "<group>";
+		};
+		C59D28C01A41B06400940363 /* index */ = {
+			isa = PBXGroup;
+			children = (
+				C5757DA81A1DDE6A008457F4 /* DAHottestC.h */,
+				C5757DA91A1DDE6A008457F4 /* DAHottestC.m */,
+				C5CE7E381A1E29E400EC9D7E /* DAHottestTrackC.h */,
+				C5CE7E391A1E29E400EC9D7E /* DAHottestTrackC.m */,
+				C5CE7E3D1A1E2A0D00EC9D7E /* DAHottestArtistC.h */,
+				C5CE7E3E1A1E2A0D00EC9D7E /* DAHottestArtistC.m */,
+			);
+			name = index;
+			sourceTree = "<group>";
+		};
+		C5CAF94C1A41424C00519655 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5420FD21A2474E50058BFFF /* DAProfileSubListCellV.h */,
+				C5420FD31A2474E50058BFFF /* DAProfileSubListCellV.m */,
+				C5420FD51A2478740058BFFF /* DAEventCellV.h */,
+				C5420FD61A2478740058BFFF /* DAEventCellV.m */,
+				C52711DF1A1F806B004CD020 /* DATrackCellV.h */,
+				C52711E01A1F806B004CD020 /* DATrackCellV.m */,
+				C5D88D441A21BB3000F00125 /* DAArtistCellV.h */,
+				C5D88D451A21BB3000F00125 /* DAArtistCellV.m */,
+				C5420FDB1A24975C0058BFFF /* DAPlaylistInProfileCellV.h */,
+				C5420FDC1A24975C0058BFFF /* DAPlaylistInProfileCellV.m */,
+				C59D28C41A41BF6F00940363 /* DAAlbumCellV.h */,
+				C59D28C51A41BF6F00940363 /* DAAlbumCellV.m */,
+				C58A6C811A429FBC000B45A5 /* DAUpdateCellV.h */,
+				C58A6C821A429FBC000B45A5 /* DAUpdateCellV.m */,
+				C58A6D011A43A961000B45A5 /* DAMessageCellV.h */,
+				C58A6D021A43A961000B45A5 /* DAMessageCellV.m */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		C5DF7B461A20B9B4005E64BE /* service */ = {
@@ -380,6 +661,8 @@
 				C5D88D481A21BF1700F00125 /* DAArtistService.m */,
 				C5420FC81A245C070058BFFF /* DAPlaylistService.h */,
 				C5420FC91A245C070058BFFF /* DAPlaylistService.m */,
+				C59D28C71A41C61100940363 /* DAAlbumService.h */,
+				C59D28C81A41C61100940363 /* DAAlbumService.m */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -463,7 +746,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5757D9B1A1B00CC008457F4 /* DALeftMenuC.xib in Resources */,
-				C52711DE1A1F803E004CD020 /* DATrackCellV.xib in Resources */,
+				C58A6CE81A4306D9000B45A5 /* README.textile in Resources */,
+				C58A6CE41A4306D9000B45A5 /* FontAwesome.ttf in Resources */,
 				C530E7CD1A22302700F1101E /* DAProfileC.xib in Resources */,
 				C5757D7B1A19D030008457F4 /* Images.xcassets in Resources */,
 				C5757D6D1A19D030008457F4 /* InfoPlist.strings in Resources */,
@@ -520,33 +804,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5420FD41A2474E50058BFFF /* DAProfileSubListCellV.m in Sources */,
+				C58A6CDC1A4306D9000B45A5 /* ActionSheetDatePicker.m in Sources */,
 				C5420FC11A24534E0058BFFF /* DAPlaylistInProfileC.m in Sources */,
+				C58A6CAC1A430441000B45A5 /* UIColor+expanded.m in Sources */,
 				C530E7D41A2239F900F1101E /* UIImage+BlurredFrame.m in Sources */,
 				C5757DB01A1DE998008457F4 /* UIView+Borders.m in Sources */,
+				C58A6C831A429FBC000B45A5 /* DAUpdateCellV.m in Sources */,
+				C58A6CE61A4306D9000B45A5 /* UIImage+FontAwesome.m in Sources */,
 				C5420FDD1A24975C0058BFFF /* DAPlaylistInProfileCellV.m in Sources */,
+				C58A6CF51A430B9A000B45A5 /* NSString+Emojize.m in Sources */,
+				C58A6C801A429BFC000B45A5 /* DAUpdateC.m in Sources */,
 				C5757D9F1A1C79AC008457F4 /* DALeftMenuC.m in Sources */,
 				C5420FD01A2472160058BFFF /* DAProfileSubListC.m in Sources */,
 				C5757D6F1A19D030008457F4 /* main.m in Sources */,
 				C52711E11A1F806B004CD020 /* DATrackCellV.m in Sources */,
 				C5CE7E401A1E2A0D00EC9D7E /* DAHottestArtistC.m in Sources */,
+				C58A6CF81A430CC3000B45A5 /* NSString+Common.m in Sources */,
+				C58A6CAD1A430441000B45A5 /* UIDevice+Info.m in Sources */,
 				C5D88D431A21B16200F00125 /* DARefreshableContentTableC.m in Sources */,
+				C58A6CDA1A4306D9000B45A5 /* AbstractActionSheetPicker.m in Sources */,
 				C5D88D3C1A2170EA00F00125 /* DAConstants.m in Sources */,
+				C58A6CDD1A4306D9000B45A5 /* ActionSheetDistancePicker.m in Sources */,
 				C5757DA21A1D95EB008457F4 /* DARootC.m in Sources */,
 				C5757DA61A1D9613008457F4 /* DAPlayerC.m in Sources */,
+				C58A6CE21A4306D9000B45A5 /* FAImageView.m in Sources */,
+				C58A6D031A43A961000B45A5 /* DAMessageCellV.m in Sources */,
+				C58A6CDF1A4306D9000B45A5 /* ActionSheetStringPicker.m in Sources */,
+				C59D28C91A41C61100940363 /* DAAlbumService.m in Sources */,
+				C58A6CA91A430441000B45A5 /* UIBarButtonItem+Common.m in Sources */,
 				C530E7D91A22B1E500F1101E /* Colours.m in Sources */,
+				C58A6D0C1A456D2F000B45A5 /* UITableViewCell+Common.m in Sources */,
 				C5D88D401A2171CC00F00125 /* DAUtils.m in Sources */,
 				C5757D791A19D030008457F4 /* DAViewController.m in Sources */,
+				C58A6CE31A4306D9000B45A5 /* NSString+FontAwesome.m in Sources */,
+				C58A6CEA1A4306D9000B45A5 /* UIButton+PPiAwesome.m in Sources */,
+				C58A6D061A43AFFD000B45A5 /* DAMessageC.m in Sources */,
 				C5D88D461A21BB3000F00125 /* DAArtistCellV.m in Sources */,
+				C58A6CAE1A430441000B45A5 /* UIImage+Common.m in Sources */,
+				C58A6CA51A430441000B45A5 /* NSDate+convenience.m in Sources */,
 				C5420FCD1A2471DF0058BFFF /* DAEventC.m in Sources */,
+				C58A6CE71A4306D9000B45A5 /* NSDate+Helper.m in Sources */,
 				C5420FCA1A245C070058BFFF /* DAPlaylistService.m in Sources */,
 				C5CE7E3B1A1E29E400EC9D7E /* DAHottestTrackC.m in Sources */,
+				C58A6CE11A4306D9000B45A5 /* SWActionSheet.m in Sources */,
+				C58A6CA71A430441000B45A5 /* NSObject+ObjectMap.m in Sources */,
+				C58A6CE51A4306D9000B45A5 /* UIFont+FontAwesome.m in Sources */,
+				C59D28C61A41BF6F00940363 /* DAAlbumCellV.m in Sources */,
+				C58A6CAA1A430441000B45A5 /* UIButton+Bootstrap.m in Sources */,
+				C58A6CAF1A430441000B45A5 /* UIImageView+Common.m in Sources */,
 				C530E7DD1A23060300F1101E /* DZNSegmentedControl.m in Sources */,
 				C5757D731A19D030008457F4 /* DAAppDelegate.m in Sources */,
 				C5DF7B491A20B9E7005E64BE /* DATrackService.m in Sources */,
+				C58A6CE91A4306D9000B45A5 /* UIAwesomeButton.m in Sources */,
+				C58A6CDE1A4306D9000B45A5 /* ActionSheetLocalePicker.m in Sources */,
+				C59D28C31A41B95B00940363 /* DAAlbumC.m in Sources */,
+				C58A6CA41A430441000B45A5 /* NSDate+Common.m in Sources */,
+				C58A6CE01A4306D9000B45A5 /* DistancePickerView.m in Sources */,
+				C58A6CDB1A4306D9000B45A5 /* ActionSheetCustomPicker.m in Sources */,
+				C58A6CF01A430A8B000B45A5 /* UIView+Common.m in Sources */,
 				C5420FD71A2478740058BFFF /* DAEventCellV.m in Sources */,
 				C530E7D51A2239F900F1101E /* UIImage+ImageEffects.m in Sources */,
 				C5FA9F861A2315B000FFFEC6 /* DASwipePageScrollView.m in Sources */,
 				C5D88D491A21BF1700F00125 /* DAArtistService.m in Sources */,
+				C58A6CED1A4307D0000B45A5 /* UIButton+Common.m in Sources */,
 				C530E7CC1A22302700F1101E /* DAProfileC.m in Sources */,
 				C5757DAB1A1DDE6A008457F4 /* DAHottestC.m in Sources */,
 			);

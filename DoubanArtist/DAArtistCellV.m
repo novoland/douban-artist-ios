@@ -35,6 +35,8 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self applyAppStyle];
+        
         // Initialization code
         self.accessoryType =UITableViewCellAccessoryDisclosureIndicator;
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91322463-B067-4A9E-A7DB-1C9CD2328DB3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DoubanArtist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>36C4EBE4A8B41E7262F5124CE0613F6780FAD1BF</key>
+		<string>github.com:novoland/douban-artist-ios.git</string>
+		<key>9F9B14DA276794D9192F387F0CC62561009373D0</key>
+		<string>github.com:mwaterfall/MWPhotoBrowser.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DoubanArtist.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>36C4EBE4A8B41E7262F5124CE0613F6780FAD1BF</key>
+		<string>..</string>
+		<key>9F9B14DA276794D9192F387F0CC62561009373D0</key>
+		<string>../../ios-controls/MWPhotoBrowser</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:novoland/douban-artist-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>36C4EBE4A8B41E7262F5124CE0613F6780FAD1BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36C4EBE4A8B41E7262F5124CE0613F6780FAD1BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DoubanArtist</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F9B14DA276794D9192F387F0CC62561009373D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MWPhotoBrowser</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -35,8 +35,6 @@
     
     // Do any additional setup after loading the view from its nib.
     
-    self.automaticallyAdjustsScrollViewInsets = YES;
-    
     // 加入 segmentedControl 到 nav bar
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"IconMenu"] style:UIBarButtonItemStyleBordered target:self action:@selector(presentLeftMenuViewController:)];
     

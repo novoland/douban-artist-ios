@@ -48,11 +48,29 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 0
 
+// DACircularProgress
+#define COCOAPODS_POD_AVAILABLE_DACircularProgress
+#define COCOAPODS_VERSION_MAJOR_DACircularProgress 2
+#define COCOAPODS_VERSION_MINOR_DACircularProgress 2
+#define COCOAPODS_VERSION_PATCH_DACircularProgress 0
+
+// DZNEmptyDataSet
+#define COCOAPODS_POD_AVAILABLE_DZNEmptyDataSet
+#define COCOAPODS_VERSION_MAJOR_DZNEmptyDataSet 1
+#define COCOAPODS_VERSION_MINOR_DZNEmptyDataSet 4
+#define COCOAPODS_VERSION_PATCH_DZNEmptyDataSet 1
+
 // HPGrowingTextView
 #define COCOAPODS_POD_AVAILABLE_HPGrowingTextView
 #define COCOAPODS_VERSION_MAJOR_HPGrowingTextView 1
 #define COCOAPODS_VERSION_MINOR_HPGrowingTextView 1
 #define COCOAPODS_VERSION_PATCH_HPGrowingTextView 0
+
+// JDStatusBarNotification
+#define COCOAPODS_POD_AVAILABLE_JDStatusBarNotification
+#define COCOAPODS_VERSION_MAJOR_JDStatusBarNotification 1
+#define COCOAPODS_VERSION_MINOR_JDStatusBarNotification 4
+#define COCOAPODS_VERSION_PATCH_JDStatusBarNotification 9
 
 // LTUpdate
 #define COCOAPODS_POD_AVAILABLE_LTUpdate
@@ -66,17 +84,35 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
-// MTStatusBarOverlay
-#define COCOAPODS_POD_AVAILABLE_MTStatusBarOverlay
-#define COCOAPODS_VERSION_MAJOR_MTStatusBarOverlay 0
-#define COCOAPODS_VERSION_MINOR_MTStatusBarOverlay 9
-#define COCOAPODS_VERSION_PATCH_MTStatusBarOverlay 1
+// MWPhotoBrowser
+#define COCOAPODS_POD_AVAILABLE_MWPhotoBrowser
+#define COCOAPODS_VERSION_MAJOR_MWPhotoBrowser 1
+#define COCOAPODS_VERSION_MINOR_MWPhotoBrowser 4
+#define COCOAPODS_VERSION_PATCH_MWPhotoBrowser 1
+
+// PBWebViewController
+#define COCOAPODS_POD_AVAILABLE_PBWebViewController
+#define COCOAPODS_VERSION_MAJOR_PBWebViewController 0
+#define COCOAPODS_VERSION_MINOR_PBWebViewController 3
+#define COCOAPODS_VERSION_PATCH_PBWebViewController 0
+
+// PSTCollectionView
+#define COCOAPODS_POD_AVAILABLE_PSTCollectionView
+#define COCOAPODS_VERSION_MAJOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_MINOR_PSTCollectionView 2
+#define COCOAPODS_VERSION_PATCH_PSTCollectionView 3
 
 // RESideMenu
 #define COCOAPODS_POD_AVAILABLE_RESideMenu
 #define COCOAPODS_VERSION_MAJOR_RESideMenu 4
 #define COCOAPODS_VERSION_MINOR_RESideMenu 0
 #define COCOAPODS_VERSION_PATCH_RESideMenu 7
+
+// RegexKitLite
+#define COCOAPODS_POD_AVAILABLE_RegexKitLite
+#define COCOAPODS_VERSION_MAJOR_RegexKitLite 4
+#define COCOAPODS_VERSION_MINOR_RegexKitLite 0
+#define COCOAPODS_VERSION_PATCH_RegexKitLite 0
 
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage
@@ -95,6 +131,12 @@
 #define COCOAPODS_VERSION_MAJOR_SSKeychain 1
 #define COCOAPODS_VERSION_MINOR_SSKeychain 2
 #define COCOAPODS_VERSION_PATCH_SSKeychain 2
+
+// StreamingKit
+#define COCOAPODS_POD_AVAILABLE_StreamingKit
+#define COCOAPODS_VERSION_MAJOR_StreamingKit 0
+#define COCOAPODS_VERSION_MINOR_StreamingKit 1
+#define COCOAPODS_VERSION_PATCH_StreamingKit 25
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop

@@ -27,6 +27,8 @@
     // table view
     self.menuTable.delegate = self;
     self.menuTable.dataSource = self;
+    
+    [_logButton defaultStyle];
 }
 
 - (void)didReceiveMemoryWarning

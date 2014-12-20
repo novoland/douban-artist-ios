@@ -49,4 +49,8 @@
     
 }
 
+- (NSString *) getBlankPlaceholderStr {
+    return @"该音乐人暂无单曲";
+}
+
 @end
